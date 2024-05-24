@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define WIDTH 100
-#define HEIGHT 82
+#define WIDTH 332
+#define HEIGHT 271
 
 void read_bytes_from_file(const char *filename, unsigned char *image) {
     FILE *file = fopen(filename, "r");
@@ -46,8 +46,8 @@ void save_image_as_pgm(const char *filename, unsigned char *image, int width, in
 }
 
 int main() {
-    const char *input_filename = "zezo_reduzido_bytes.txt";
-    const char *output_filename = "output_image.pgm";
+    const char *input_filename = "zezo_bytes.txt";
+    const char *output_filename = "zezo_raw_to_img.pgm";
     
     // Allocate memory for the image
     unsigned char *image = (unsigned char *)malloc(WIDTH * HEIGHT);
